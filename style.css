@@ -1,0 +1,151 @@
+/* 1. Global Reset & Page Alignment with Gradient Background (Bonus) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #bc1e1e 0%, #a99e25 50%, #982dce 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* 2. Box Model, Dark Theme & Card Hover Animation (Bonus) */
+.profile-card {
+  background-color: #234773;
+  width: 340px;
+  padding: 32px 24px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 252, 61, 0.982);
+  box-shadow: 0 20px 40px rgb(241, 51, 51);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgb(58, 237, 112);
+  border-color: rgba(58, 204, 237, 0.971);
+}
+
+/* 3. Image Styling & Status Badge Positioning (Bonus) */
+.avatar-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f3f2f5;
+  display: block;
+}
+
+.status-indicator {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 14px;
+  height: 14px;
+  background-color: #ebb607;
+  border: 2px solid #295cae;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #b96710;
+}
+
+/* 4. Typography & Spacing */
+.name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 4px;
+  letter-spacing: -0.02em;
+}
+
+.title {
+  font-size: 0.875rem;
+  color: #a78bfa;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.bio {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* 5. Flexbox: Skill Badges with Hover Interactivity */
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.badge {
+  background-color: rgba(237, 244, 245, 0.889);
+  color: #533cae;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(110, 58, 200, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.badge:hover {
+  transform: translateY(-3px);
+  background-color: #bcb3cb;
+  color: #c52020;
+}
+
+/* 6. Flexbox & Interactivity: Buttons */
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  flex: 1;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #734bb0;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(120, 66, 120, 0.904);
+}
+
+.btn-primary:hover {
+  background-color: #d92828;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgb(251, 212, 38);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #9e3e3e;
+  border: 1px solid rgba(169, 85, 85, 0.856);
+}
+
+.btn-secondary:hover {
+  background-color: rgb(255, 255, 255);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
+}
